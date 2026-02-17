@@ -1,0 +1,12 @@
+{
+  "domain": "meteo_france",
+  "name": "Météo France",
+  "version": "v0.0.0",
+  "requirements": [],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "codeowners": [],
+  "loggers": [],
+  "integration_type": "service",
+  "single_config_entry": true
+}

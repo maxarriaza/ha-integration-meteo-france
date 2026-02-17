@@ -1,0 +1,12 @@
+[project]
+name = "ha-integration-meteo-france"
+version = "1.0.0"
+description = "Meteo France Home Assistant integration"
+readme = "README.md"
+requires-python = ">=3.13.2"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "homeassistant==2026.2.1",
+]
