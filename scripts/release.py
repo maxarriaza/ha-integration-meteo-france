@@ -16,7 +16,7 @@ logging.basicConfig(
 
 _LOGGER = logging.getLogger("Version")
 
-MANIFEST_PATH = Path('./custom_components/bbox/manifest.json')
+MANIFEST_PATH = Path('./custom_components/meteo_france/manifest.json')
 
 def _run_uv_version_command(version: str):
     """ Function to run uv version command """
