@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Setup",
+        "data": {
+          "api_key": "API key",
+          "department_code": "Department code"
+        }
+      }
+    },
+    "error": {
+      "invalid_api_key": "Invalid API key"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "vigilance_rain": {
+        "name": "Vigilance Rain",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_wind": {
+        "name": "Vigilance Wind",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_thunderstorm": {
+        "name": "Vigilance Thunderstorm",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_flood": {
+        "name": "Vigilance Flood",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_snow_ice": {
+        "name": "Vigilance Snow & Ice",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_extreme_heat": {
+        "name": "Vigilance Extreme Heat",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_extreme_cold": {
+        "name": "Vigilance Extreme Cold",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_avalanche": {
+        "name": "Vigilance Avalanche",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      },
+      "vigilance_subersion": {
+        "name": "Vigilance Waves Submersion",
+        "state": {
+          "green": "Green",
+          "yellow": "Yellow",
+          "orange": "Orange",
+          "red": "Red"
+        }
+      }
+    }
+  }
+}

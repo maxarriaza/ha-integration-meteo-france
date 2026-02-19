@@ -1,12 +1,19 @@
 [project]
 name = "ha-integration-meteo-france"
-version = "1.0.0"
+version = "0.0.0"
 description = "Meteo France Home Assistant integration"
 readme = "README.md"
-requires-python = ">=3.13.2"
+requires-python = ">=3.14.2"
 dependencies = []
 
 [dependency-groups]
 dev = [
-    "homeassistant==2026.2.1",
+    "homeassistant==2026.6.0",
 ]
+
+[home-assistant]
+domain = "meteo_france"
+name = "Météo France"
+config-flow = true
+iot-class = "cloud_polling"
+integration-type = "service"
