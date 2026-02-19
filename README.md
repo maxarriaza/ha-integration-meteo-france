@@ -24,6 +24,11 @@ There is currently support for the following device types within Home Assistant:
 To start Home Assistant instance with the integration, run the following command :\
 `uv run homeassistant -c .homeassistant --debug --open-ui`
 
+### Build
+
+To build the project run the following command :\
+`uv run ./scripts/build.py`
+
 ### Release
 
 To release a new version of the project (Bump project version, update manifest version and create a git tag), run the following command :\

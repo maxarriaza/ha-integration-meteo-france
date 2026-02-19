@@ -14,3 +14,7 @@ wheels/
 
 # IDE Settings
 .idea
+
+# Project generated files
+custom_components
+dist
