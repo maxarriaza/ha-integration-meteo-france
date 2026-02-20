@@ -9,8 +9,6 @@ from .api.client import MeteoFranceApiClient
 from .api.exception import MeteoFranceApiError
 from .const import DOMAIN, CONF_API_KEY, CONF_DEPARTMENT_CODE
 
-_LOGGER = logging.getLogger(__name__)
-
 class MeteoFranceConfigurationFlowHandler(ConfigFlow, domain=DOMAIN):
     """ Handle a global configuration flow handler for integration """
     VERSION = 1
