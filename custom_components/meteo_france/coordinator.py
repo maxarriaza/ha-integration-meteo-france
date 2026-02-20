@@ -57,4 +57,4 @@ class MeteoFranceDataUpdateCoordinator(DataUpdateCoordinator[MeteoFranceVigilanc
             )
 
         except MeteoFranceApiError as err:
-            raise UpdateFailed("Error occurred") from err
+            raise UpdateFailed(str(err))
