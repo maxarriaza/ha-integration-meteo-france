@@ -12,7 +12,8 @@ _LOGGER = logging.getLogger(__name__)
 
 async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> bool:
     """ Setup integration for configuration entry """
-    _LOGGER.debug('Setup integration')
+    _LOGGER.debug("Setup integration for entry %s", config_entry.entry_id)
+
     # Setup coordinator
     coordinator = MeteoFranceDataUpdateCoordinator(hass=hass, config_entry=config_entry)
     await coordinator.async_config_entry_first_refresh()
@@ -42,10 +43,12 @@ async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> b
 
 async def async_update_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> None:
     """ Handler for config entry update """
-    _LOGGER.debug('Update entry %s', config_entry.entry_id)
+    _LOGGER.debug("Update integration for entry %s", config_entry.entry_id)
+
     await hass.config_entries.async_reload(config_entry.entry_id)
 
 async def async_unload_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> bool:
     """ Handler for config entry unload """
-    _LOGGER.debug("Unload entry %s", config_entry.entry_id)
+    _LOGGER.debug("Unload integration for entry %s", config_entry.entry_id)
+
     return await hass.config_entries.async_unload_platforms(config_entry, PLATFORMS)

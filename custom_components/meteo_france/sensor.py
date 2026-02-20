@@ -15,10 +15,9 @@ _LOGGER = getLogger(__name__)
 
 async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry[MeteoFranceDataUpdateCoordinator], async_add_entities: AddEntitiesCallback) -> None:
     """Setup Meteo France sensor entities"""
-    _LOGGER.debug('Setup entry %s', config_entry.entry_id)
+    _LOGGER.debug("Setup sensor platform for entry %s", config_entry.entry_id)
 
     coordinator = config_entry.runtime_data
-
     entities = [
         MeteoFranceVigilanceSensorEntity(
             coordinator=coordinator,

@@ -29,7 +29,8 @@ class MeteoFranceDataUpdateCoordinator(DataUpdateCoordinator[MeteoFranceVigilanc
         This method will be called automatically during
         coordinator.async_config_entry_first_refresh.
         """
-        self.logger.debug("Coordinator setup")
+        self.logger.debug("Setup coordinator for entry %s", self.config_entry.entry_id)
+
         self._client = MeteoFranceApiClient(api_key=self.config_entry.data.get(CONF_API_KEY), session=async_get_clientsession(self.hass))
 
     async def _async_update_data(self):
@@ -38,11 +39,10 @@ class MeteoFranceDataUpdateCoordinator(DataUpdateCoordinator[MeteoFranceVigilanc
         This is the place to pre-process the data to lookup tables
         so entities can quickly look up their data.
         """
-        self.logger.debug("Coordinator update")
+        self.logger.debug("Update coordinator data for entry %s", self.config_entry.entry_id)
 
         try:
             vigilance_data = await self._client.get_vigilance()
-
             return MeteoFranceVigilance(
                 departments=[MeteoFranceVigilanceDepartment(
                     department_code=item.domain_id,
