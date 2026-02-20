@@ -1,6 +1,6 @@
 [project]
 name = "ha-integration-meteo-france"
-version = "1.0.0"
+version = "1.0.1"
 description = "Meteo France Home Assistant integration"
 readme = "README.md"
 requires-python = ">=3.13.2"
