@@ -22,3 +22,7 @@ name = "Météo France"
 config-flow = true
 iot-class = "cloud_polling"
 integration-type = "service"
+
+[tool.pytest]
+testpaths = ["tests"]
+asyncio_mode = "auto"
