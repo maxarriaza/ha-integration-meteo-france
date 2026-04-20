@@ -1,4 +1,4 @@
-from custom_components.meteo_france.model import MeteoFranceVigilancePhenomenon, MeteoFranceVigilanceRisk
+from src.model import MeteoFranceVigilancePhenomenon, MeteoFranceVigilanceRisk
 
 
 def map_meteo_france_vigilance_phenomenon(phenomenon_id: int) -> MeteoFranceVigilancePhenomenon | None:

@@ -1,3 +1,5 @@
 {
-  "name": "Météo France"
+  "name": "Météo France",
+  "zip_release": true,
+  "filename": "ha-integration-meteo-france.zip"
 }

@@ -5,8 +5,8 @@ from homeassistant.core import HomeAssistant
 from homeassistant.helpers import device_registry
 from homeassistant.helpers.device_registry import DeviceEntryType
 
-from .const import PLATFORMS, DOMAIN, CONF_DEPARTMENT_CODE
-from .coordinator import MeteoFranceDataUpdateCoordinator
+from src.const import PLATFORMS, DOMAIN, CONF_DEPARTMENT_CODE
+from src.coordinator import MeteoFranceDataUpdateCoordinator
 
 _LOGGER = logging.getLogger(__name__)
 

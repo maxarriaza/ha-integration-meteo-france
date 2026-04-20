@@ -10,3 +10,10 @@ dependencies = []
 dev = [
     "homeassistant==2026.2.1",
 ]
+
+[home-assistant]
+domain = "meteo_france"
+name = "Météo France"
+config-flow = true
+iot-class = "cloud_polling"
+integration-type = "service"
